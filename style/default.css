@@ -1,0 +1,182 @@
+body {
+    background: #000 url('../images/background.jpg');
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    border: 0px solid #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.content_header {
+    padding-left: 100px;
+    padding-top: 4px;
+    margin-bottom: -4px;
+    font-size: 20pt;
+    color: #f00;
+    font-weight: bold;
+}
+
+div.page_main div.content_header {
+    background: url('../images/content_header.png') no-repeat;
+    width: 510px;
+    height: 44px;
+}
+
+div.page_sidebar div.content_header {
+    background: url('../images/content_header_small.png') no-repeat;
+    width: 210px;
+    height: 43px;
+}
+
+div.page_main div.content {
+    background: url('../images/content_body.png') repeat-y;
+    width: 590px;
+    padding: 10px;
+    color: #000;
+}
+
+div.page_sidebar div.content {
+    background: url('../images/content_body_small.png') repeat-y;
+    width: 290px;
+    padding: 10px;
+    color: #000;
+}
+
+div.content a {
+    color: #000;
+    border: 0px solid #000;
+}
+
+div.page_main div.content_footer {
+    background: url('../images/content_footer.png') no-repeat;
+    width: 610px;
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+div.page_sidebar div.content_footer {
+    background: url('../images/content_footer_small.png') no-repeat;
+    width: 310px;
+    height: 21px;
+    margin-bottom: 10px;
+}
+
+div.menu {
+    background: url('../images/header_background.png') no-repeat;
+    width: 960px;
+    height: 73px;;
+    color: #000;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: -25px;
+    float: left;
+}
+
+a.menu {
+    color: #f00;
+    border: 0px solid #f00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.page_content {
+    margin-top: 10px;
+    width: 960px;
+    float: left;
+}
+
+div.page_content div.page_main {
+    float: left;
+}
+
+div.page_content div.page_sidebar {
+    float: left; margin-left: 40px;
+}
+
+div.page_footer {
+    background: url('../images/footer_background.png') no-repeat;
+    width: 960px;
+    height: 73px;
+    text-align: center;
+    color: #000;
+    padding-top: 10px;
+    font-size: 10pt;
+    float: left;
+}
+
+div.category {
+    width: 34px;
+    height: 11px;
+    background: url('../images/category.png') no-repeat;
+}
+
+div.category_xbl {
+    background-position: 0px 0px;
+}
+
+div.category_xbox {
+    background-position: 0px -11px;
+}
+
+div.category_x360 {
+    background-position: 0px -22px;
+}
+
+div.category_wii {
+    background-position: 0px -33px;
+}
+
+div.category_vc {
+    background-position: 0px -44px;
+}
+
+div.category_ret {
+    background-position: 0px -55px;
+}
+
+div.category_psp {
+    background-position: 0px -66px;
+}
+
+div.category_psn {
+    background-position: 0px -77px;
+}
+
+div.category_ps3 {
+    background-position: 0px -88px;
+}
+
+div.category_ps2 {
+    background-position: 0px -99px;
+}
+
+div.category_pc {
+    background-position: 0px -110px;
+}
+
+div.category_ngc {
+    background-position: 0px -121px;
+}
+
+div.category_nds {
+    background-position: 0px -132px;
+}
+
+div.category_multi {
+    background-position: 0px -143px;
+}
+
+div.category_main {
+    background-position: 0px -154px;
+}
+
+div.category_iph {
+    background-position: 0px -165px;
+}
+
+div.category_gba {
+    background-position: 0px -176px;
+}

@@ -1,0 +1,468 @@
+/********************************************
+*
+*	File: style.css
+*	Version: 0.2.3
+*	Author: Kevin Pennekamp
+*	Company: Vyc. 
+*	In assignment of: Undercover-Network
+*
+* 	V0.0.0: Basis CSS sheet gemaakt
+* 	V0.0.1: Header CSS toegevoegd
+* 	V0.0.2: Footer CSS toegevoegd
+* 	V0.0.3: Ondergrond voor Right content vlakken gemaakt
+* 	V0.1.0: Achtergrondvlakken Right af (tot nu toe bekend)
+*   V0.1.2: achtergrondvlakken covered en nieuws af
+*	V0.1.3: Entryline voor nieuwsberichten op frontpage toegevoegd
+*	V0.1.4: Usercontrole inloggen css af
+*	V0.1.5: css twitterwall af
+*	V0.2.0: Frontpage css volledig af (op fouten en eventuele veranderingen in de carousel na)
+*	V0.2.1: Gameinfo right af
+*	V0.2.2: Nieuws af
+*	V0.2.3: conclusie af
+*	V0.2.4: css release stuk af
+*
+********************************************/
+
+html { height: ; }
+
+body {
+	background-color: #000;
+	background-image: url('../layout/background.jpg');
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	text-align: center;
+	font-size: 11px;
+	font-family: verdana;
+}
+
+a { text-decoration: none;}
+a:link { color: #000; }
+a:visited { color: #000; } 
+a:hover { color: #000; }
+a img { border-style: none; }
+		
+img {
+	border: 0px;
+	margin: 0px auto;
+	outline: none;
+}
+
+#container {
+	width: 960px; 
+	margin: 0px auto; 
+	text-align: center;
+	overflow: hidden;
+}
+/*header*/
+#header {
+	width: 960px; 
+	margin: 0px auto; 
+}
+
+	#header .logo {
+		float: left;
+		margin: 15px 0px 10px 20px; 
+	}
+	
+	#header #menu {
+		background-image: url('../layout/header/menubalk.png');
+		height: 39px; 
+		width: 100%;
+		float: left; 
+		margin: 0px 0px 20px 0px;
+	}
+	
+		#menu .button {
+			float: left; 
+			margin: 13px 0px 5px 10px; 
+		}
+		
+		#menu .current_button {
+			float: left; 
+			margin: 13px 0px 5px 10px; 
+		}
+		
+		#menu .scheiding {
+			height: 25px; 
+			width: 1px; 
+			margin: 7px 0px 0px 10px; 
+			background-image: url('../layout/header/scheiding.png');
+			float: left; 
+		}
+
+		#menu .zoekveld {
+			background: #b7b7b7;
+			border: 1px solid #000;
+			font: normal normal normal 10px/normal 'Century Gothic', tahoma;
+			margin: 10px 0px 0px 0px;
+			width: 150px; 
+			height: 18px;
+			float: right;
+			outline: none;
+		}
+
+#content_right {
+	width: 310px; 
+	float: right; 
+	text-align: left; 
+}
+
+	#content_right .top {
+		background-image: url('../layout/layout_right/right_top.png'); 
+		width: 310px; 
+		height: 47px; 
+		float: left;
+	}
+	
+		.top .title {
+			text-align: center; 
+			float: none;
+			margin: 7px 0px 0px 0px;
+		}
+	
+	#content_right .top_banner {
+		background-image: url('../layout/layout_right/right_top2.png'); 
+		width: 310px; 
+		height: 24px;
+		float: left; 
+	}
+	
+	#content_right .bottom {
+		background-image: url('../layout/layout_right/right_bottom.png'); 
+		width: 310px; 
+		height: 24px; 
+		margin-bottom: 50px;
+		float: left; 
+	}
+	
+	#content_right .middle {
+		background-image: url('../layout/layout_right/right_middle.png'); 
+		background-repeat: repeat-y;
+		width: 270px; 
+		padding: 0px 20px 0px 20px; 
+		float: left;
+	}
+	
+		.middle .twitterfield {
+			width: 100%;
+			float: left;
+			border-bottom: 1px solid #999; 
+			margin-bottom: 5px;
+		}
+		
+			.twitterfield .twitpic {
+				width: 50px; 
+				height: 50px;
+				float: left; 
+			}
+			
+			.twitterfield .twittext {
+				float: right; 
+				width: 80%; 
+				fontsize: 10px;
+			}
+			
+				.twittext .twitname {
+					color: #F00;
+					font-weight: bold; 
+					float: left; 
+				}
+			
+			.twitterfield .twittime {
+				color: #F00; 
+				float: left; 
+				font-size: 10px; 
+				width: 50%;
+				margin-left: 100px; 
+			}
+	
+		.middle .usercontrole {
+			height: 69px; 
+			width: 100%; 
+		}
+		
+			.usercontrole .avatar {
+				float: left; 
+				height: 65px; 
+				width: 65px; 
+				border: 2px solid #333;
+				margin-right: 10px; 
+			}
+			
+			.usercontrole .zoekveld {
+				background: #fff;
+				border: 2px solid #333;
+				font: normal normal normal 10px/normal 'Century Gothic', tahoma;
+				margin: 4px 0px 0px 0px;
+				width: 130px; 
+				height: 18px;
+				float: left;
+				outline: none;
+			}
+			
+			.usercontrole .loginbutton {
+				float: left; 
+				margin-left: 5px; 
+				margin-top: 5px;
+			}
+			
+			.usercontrole .register {
+				float: right; 
+				width: 70%;
+				font-size: 9px;
+			}
+			
+		.middle .gameinfo_cover {
+			float: left; 
+			width: 110px; 
+			margin-right: 5px;
+		}
+		
+		.middle .gameinfo_title {
+			float: right; 
+			font-size: 16px; 
+			font-weight: bold;
+			width: 150px; 
+		}
+		
+		.middle .gameinfo_platforms {
+			float: left;
+			width: 150px;
+		}
+		
+		.middle .gameinfo_info {
+			float: left; 
+			width: 100%;
+		}
+		
+		.middle .gameinfo_cijfer {
+			float: right; 
+			width: 110px;
+			margin-top: -60px;
+		}
+
+#content_left {
+	width: 610px;
+	float: left; 
+	text-align: left;
+}
+
+	#content_left #carousel {
+		float: left; 
+		width: 600px; 
+		height: 331px;
+		margin: 0px 0px 35px 5px;
+	}
+	
+		#carousel #top {
+			float: left; 
+			width: 600px; 
+			height: 280px;
+			margin: 0px 0px 12px 0px; 
+		}
+		
+			#top .textfield {
+				background-image: url('../layout/carousel/maintext.png');
+				width: 570px;
+				height: 50px;
+				padding: 10px 15px 10px 15px;
+				margin: 0px 0px 0px 0px;
+				position: relative;
+				top: 200px;
+			}
+
+			
+		#carousel #bottom {
+			float: left; 
+			width: 600px; 
+			height: 39px;
+		}
+			
+			#bottom .entry {
+				width: 180px; 
+				height: 35px;
+				float: left; 
+				border: solid 2px #a90901; 
+				margin: 0px 0px 0px 11px; 
+			}
+			
+				.entry .overlay {
+					background-image: url('../layout/carousel/overlay.png');
+					width: 180px;
+					height: 35px;
+					margin: 0px 0px 0px 0px;
+				}
+	
+	#content_left .top_covered {
+		background-image: url('../layout/layout_left/covered_top.png'); 
+		width: 610px; 
+		height: 47px; 
+		float: left; 
+	}
+	
+		.top_covered .title {
+			text-align: center; 
+			float: none;
+			margin: 7px 0px 0px 0px;
+		}
+	
+	#content_left .bottom_covered {
+		background-image: url('../layout/layout_left/covered_bottom.png'); 
+		width: 610px; 
+		height: 24px; 
+		margin-bottom: 50px;
+		float: left; 
+	}
+	
+	#content_left .top {
+		background-image: url('../layout/layout_left/left_top.png'); 
+		width: 610px; 
+		height: 47px; 
+		float: left; 
+	}
+	
+		.top .title {
+			text-align: center; 
+			float: none;
+			margin: 7px 0px 0px 0px;
+		}
+	
+	#content_left .bottom {
+		background-image: url('../layout/layout_left/left_bottom.png'); 
+		width: 610px; 
+		height: 24px; 
+		margin-bottom: 30px;
+		float: left; 
+	}
+	
+	#content_left .middle {
+		background-image: url('../layout/layout_left/left_middle.png'); 
+		background-repeat: repeat-y;
+		width: 570px; 
+		padding: 0px 20px 0px 20px; 
+		float: left; 
+	}
+	
+		.middle .entryline {
+			width: 100%;
+			float: left; 
+			border-bottom: 1px solid #999; 
+		}
+		
+			.entryline .datum {
+				float: left;
+				height: 11px;
+				width: 30px; 
+			}
+			
+			.entryline .platform {
+				float: left; 
+				width: 34px; 
+				height: 11px;
+				margin: 3px 0px 0px 5px; 
+			}
+			
+			.entryline .type {
+				float: left; 
+				height: 11px; 
+				margin-left: 5px; 
+				font-weight: bold; 
+				width: 70px; 
+			}
+			
+			.entryline .title {
+				float: left; 
+				height: 11px; 
+				margin-left: 10px; 
+			}
+			
+			.entryline .reactie {
+				float: right;
+				height: 11px; 
+			}
+		
+	
+#footer {
+	width: 100%;
+	height: 75px;
+	float: left; 
+	background-image: url('../layout/footer.png');
+	margin: 0px 0px 0px 0px; 	
+}
+
+div.category {
+    width: 34px;
+    height: 11px;
+    background: url('../images/category.png') no-repeat;
+}
+
+div.category_xbl {
+    background-position: 0px 0px;
+}
+
+div.category_xbox {
+    background-position: 0px -11px;
+}
+
+div.category_x360 {
+    background-position: 0px -22px;
+}
+
+div.category_wii {
+    background-position: 0px -33px;
+}
+
+div.category_vc {
+    background-position: 0px -44px;
+}
+
+div.category_ret {
+    background-position: 0px -55px;
+}
+
+div.category_psp {
+    background-position: 0px -66px;
+}
+
+div.category_psn {
+    background-position: 0px -77px;
+}
+
+div.category_ps3 {
+    background-position: 0px -88px;
+}
+
+div.category_ps2 {
+    background-position: 0px -99px;
+}
+
+div.category_pc {
+    background-position: 0px -110px;
+}
+
+div.category_ngc {
+    background-position: 0px -121px;
+}
+
+div.category_nds {
+    background-position: 0px -132px;
+}
+
+div.category_multi {
+    background-position: 0px -143px;
+}
+
+div.category_main {
+    background-position: 0px -154px;
+}
+
+div.category_iph {
+    background-position: 0px -165px;
+}
+
+div.category_gba {
+    background-position: 0px -176px;
+}

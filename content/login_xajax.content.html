@@ -1,0 +1,20 @@
+<form id="loginform" name="loginform" method="post">
+    <script src="http://www.undercover-gaming.nl/forum/clientscript/vbulletin_md5.js?v=373" type="text/javascript"></script>
+    <table>
+        <tr>
+            <td><input type="text" size="10" tabindex="101" title="Gebruikersnaam" onfocus="if (this.value == 'Gebruikersnaam') this.value = '';" value="Gebruikersnaam" id="navbar_username" name="vb_login_username" ></td>
+            <td><input type="checkbox" tabindex="103" id="cb_cookieuser_navbar" value="1" name="cookieuser">Onthouden?</td>
+        </tr>
+        <tr>
+            <td><input type="password" size="10" tabindex="102" id="navbar_password" name="vb_login_password" title="Wachtwoord"></td>
+            <td><input type="button" tabindex="104" value="Inloggen" onclick="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0); xajax_loginform(xajax.getFormValues('loginform'));"></td>
+        </tr>
+    </table>
+    <input type="hidden" value="" name="s">
+    <input type="hidden" value="guest" name="securitytoken">
+    <input type="hidden" value="login" name="do">
+    <input type="hidden" name="vb_login_md5password">
+    <input type="hidden" name="vb_login_md5password_utf">
+</form>
+<div id="debug" style="border: 1px solid #f00;">
+</div>

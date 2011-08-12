@@ -1,0 +1,27 @@
+<script type="text/javascript" src="script/edit_item.js"></script>
+<div id="previewdiv" style="width: 936px; padding: 10px; background: url('../images/item_background.png'); border: 2px solid #333; float: left; margin-bottom: 10px;"></div>
+<div id="editdiv" style="width: 500px; float: left;">
+    <form action="" method="post">
+        <table>
+            <tr><td style="width: 85px;"><b>Title</b>:</td><td><input type="text" name="title" id="title" size="30" value="{item_title}" /></td></tr>
+            <tr><td><b>Description</b>:</td><td><input type="text" name="description" id="description" size="30" value="{item_description}" /></td></tr>
+            <tr><td colspan="2"><textarea rows="40" cols="60" name="text" id="text">{text_orig}</textarea></td></tr>
+
+            {review_extra}
+
+            <tr><td><b>Active</b>:</td><td><input type="checkbox" name="active" id="active" value="{active}" checked="{active}" /></td></tr>
+
+            <tr><td><b>Object</b>:</td><td><input type="hidden" name="objecttypeid" id="objecttypeid" value="{objecttype}" /><input type="radio" name="objecttype" value="0" onclick="set_type(0);" {checked_0}/> Geen <input type="radio" name="objecttype" value="1" onclick="set_type(1);" {checked_1}/> Game <input type="radio" name="objecttype" value="2" onclick="set_type(2);" {checked_2}/> Company</td></tr>
+
+            <tr id="object_games"><td><b>Game</b>:</td><td><select id="games" name="games">
+            {games}
+            </select></td></tr>
+
+            <tr id="object_companies"><td><b>Company</b>:</td><td><select id="companies" name="companies">
+            {companies}
+            </select></td></tr>
+
+            <tr><td colspan="2"><input style="float: left;" type="button" value="Update" onclick="set_result_loading(); xajax_edititem({id}, document.getElementById('title').value, document.getElementById('description').value, document.getElementById('text').value, document.getElementById('conclusion').value, document.getElementById('rating').value, document.getElementById('active').value, document.getElementById('objecttypeid').value, document.getElementById('games').value, document.getElementById('companies').value); return false;" /><div id="resultdiv" style="float: left; margin-left: 10px; margin-top: 2px;"></div></td></tr>
+        </table>
+    </form>
+</div>
